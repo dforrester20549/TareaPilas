@@ -9,4 +9,30 @@
  */
 public class Nodo {
     
+    private trasteSucio valor;
+    private Nodo siguiente;
+    
+    //constructor para inicializar
+
+    public Nodo() {
+        this.valor = null;
+        this.siguiente = null;
+    }
+
+    public trasteSucio getValor() {
+        return valor;
+    }
+
+    public void setValor(trasteSucio valor) {
+        this.valor = valor;
+    }
+
+    public Nodo getSiguiente() {
+        return siguiente;
+    }
+
+    public void setSiguiente(Nodo siguiente) {
+        this.siguiente = siguiente;
+    }
+    
 }

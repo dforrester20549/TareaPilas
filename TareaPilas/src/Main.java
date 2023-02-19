@@ -14,6 +14,12 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Pilas pila = new Pilas();
+        pila.push(new trasteSucio("001",5,3));
+        pila.push(new trasteSucio("002",3,7));
+        pila.push(new trasteSucio("003",8,2));  
+        
+        pila.listar();
     }
     
 }
