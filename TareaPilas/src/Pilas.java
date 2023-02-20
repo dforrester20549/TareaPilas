@@ -11,6 +11,7 @@ public class Pilas {
     
     private Nodo cima;
     private int largo;
+    private int totalcubiertos;
 
     public Pilas() {
         this.cima = null;
@@ -29,6 +30,7 @@ public class Pilas {
             this.cima = newNode;
         }
         else{
+            totalcubiertos = totalcubiertos + valor.getCubiertos();
             newNode.setSiguiente(this.cima);
             this.cima = newNode;
         }
@@ -118,6 +120,7 @@ public class Pilas {
         Nodo aux = cima;
         // Recorre la pila hasta el ultimo node.
         while(aux != null){
+            System.out.println("|\t Total de cubiertos "+totalcubiertos);
             System.out.println("|\t" + aux.getValor().getNumerotrasteSucio()+ 
                      "\t|"+"|\t"+ aux.getValor().getVasos()+"\t|"+ "|\t"
             + aux.getValor().getCubiertos()+"\t|");

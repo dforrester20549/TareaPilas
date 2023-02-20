@@ -17,7 +17,8 @@ public class Main {
         Pilas pila = new Pilas();
         pila.push(new trasteSucio("001",5,3));
         pila.push(new trasteSucio("002",3,7));
-        pila.push(new trasteSucio("003",8,2));  
+        pila.push(new trasteSucio("003",8,2));
+        pila.push(new trasteSucio("004",4,11));
         
         pila.listar();
     }
