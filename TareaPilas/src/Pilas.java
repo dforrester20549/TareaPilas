@@ -120,13 +120,13 @@ public class Pilas {
         Nodo aux = cima;
         // Recorre la pila hasta el ultimo node.
         while(aux != null){
-            System.out.println("|\t Total de cubiertos "+totalcubiertos);
             System.out.println("|\t" + aux.getValor().getNumerotrasteSucio()+ 
                      "\t|"+"|\t"+ aux.getValor().getVasos()+"\t|"+ "|\t"
             + aux.getValor().getCubiertos()+"\t|");
             System.out.println("-----------------");
             aux = aux.getSiguiente();
         }
+        System.out.println("\n|\t Total de cubiertos "+totalcubiertos+"\t|");
     }
     
 }
