@@ -120,6 +120,7 @@ public class Pilas {
         Nodo aux = cima;
         // Recorre la pila hasta el ultimo node.
         while(aux != null){
+            System.out.println("Metodo de Pilas"+"\n\n");
             System.out.println("|\t" + aux.getValor().getNumerotrasteSucio()+ 
                      "\t|"+"|\t"+ aux.getValor().getVasos()+"\t|"+ "|\t"
             + aux.getValor().getCubiertos()+"\t|");
